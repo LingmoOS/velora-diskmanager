@@ -1,0 +1,29 @@
+Source: velora-diskmanager
+Section: admin
+Priority: optional
+Maintainer: Lingmo OS Team <team@lingmo.org>
+Build-Depends:
+ debhelper (>= 11),
+ cmake,
+ pkg-config,
+ libc6-dev,
+ qt6-tools-dev,
+ qt6-base-dev,
+ libx11-dev,
+ libdtk6widget-dev,
+ qt6-tools-dev-tools,
+ qt6-base-private-dev,
+ libparted-dev,
+ libparted-fs-resize0,
+ libpolkit-qt6-1-dev,
+ libgtest-dev,
+ libgmock-dev,
+ deepin-gettext-tools
+Standards-Version: 4.5.0
+Homepage: https://github.com/LingmoOS/velora-diskmanager
+
+Package: deepin-diskmanager
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, smartmontools, pkexec
+Description: Disk Utility is a disk management tool for creating, reorganizing and formatting partitions.
+ Disk Utility is a disk management tool for disk.

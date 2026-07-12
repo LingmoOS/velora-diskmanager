@@ -29,7 +29,7 @@ DiskManagerAdaptor::~DiskManagerAdaptor()
 
 QString DiskManagerAdaptor::DeviceList()
 {
-    // handle method call com.deepin.diskmanager.DeviceList
+    // handle method call com.lingmo.diskmanager.DeviceList
     QString out0;
     QMetaObject::invokeMethod(parent(), "DeviceList", Q_RETURN_ARG(QString, out0));
     return out0;
@@ -37,7 +37,7 @@ QString DiskManagerAdaptor::DeviceList()
 
 bool DiskManagerAdaptor::Install(const QString &image, const QString &device, const QString &partition, bool formatDevice)
 {
-    // handle method call com.deepin.diskmanager.Install
+    // handle method call com.lingmo.diskmanager.Install
     bool out0;
     QMetaObject::invokeMethod(parent(), "Install", Q_RETURN_ARG(bool, out0), Q_ARG(QString, image), Q_ARG(QString, device), Q_ARG(QString, partition), Q_ARG(bool, formatDevice));
     return out0;
@@ -45,19 +45,19 @@ bool DiskManagerAdaptor::Install(const QString &image, const QString &device, co
 
 void DiskManagerAdaptor::Reboot()
 {
-    // handle method call com.deepin.diskmanager.Reboot
+    // handle method call com.lingmo.diskmanager.Reboot
     QMetaObject::invokeMethod(parent(), "Reboot");
 }
 
 void DiskManagerAdaptor::Start()
 {
-    // handle method call com.deepin.diskmanager.Start
+    // handle method call com.lingmo.diskmanager.Start
     QMetaObject::invokeMethod(parent(), "Start");
 }
 
 void DiskManagerAdaptor::Stop()
 {
-    // handle method call com.deepin.diskmanager.Stop
+    // handle method call com.lingmo.diskmanager.Stop
     QMetaObject::invokeMethod(parent(), "Stop");
 }
 

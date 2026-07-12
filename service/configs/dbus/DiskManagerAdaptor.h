@@ -17,14 +17,14 @@ class QVariant;
 QT_END_NAMESPACE
 
 /*
- * Adaptor class for interface com.deepin.diskmanager
+ * Adaptor class for interface com.lingmo.diskmanager
  */
 class DiskManagerAdaptor: public QDBusAbstractAdaptor
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.diskmanager")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.diskmanager")
     Q_CLASSINFO("D-Bus Introspection", ""
-"  <interface name=\"com.deepin.diskmanager\">\n"
+"  <interface name=\"com.lingmo.diskmanager\">\n"
 "    <signal name=\"DeviceListChanged\">\n"
 "      <arg direction=\"out\" type=\"s\" name=\"deviceListJson\"/>\n"
 "    </signal>\n"

@@ -1,11 +1,11 @@
-%global repo deepin-diskmanager
+%global repo lingmo-diskmanager
 
-Name:           deepin-diskmanager
+Name:           lingmo-diskmanager
 Version:        1.3.14
 Release:        1%{?dist}
 Summary:        Disk Utility Is A Disk Management Tool For Disk
 License:        GPLv3+
-URL:            https://github.com/linuxdeepin/deepin-diskmanager
+URL:            https://github.com/linuxdeepin/lingmo-diskmanager
 Source0:        %{name}_%{version}.orig.tar.gz
 
 BuildRequires:  gcc-c++
@@ -48,11 +48,11 @@ export PATH=%{_qt5_bindir}:$PATH
 %{_datadir}/%{repo}/translations/*.qm
 %{_datadir}/applications/%{repo}.desktop
 %{_datadir}/icons/hicolor/scalable/apps/%{repo}.svg
-%{_datadir}/deepin-manual/manual-assets/application/deepin-diskmanager/*
+%{_datadir}/deepin-manual/manual-assets/application/lingmo-diskmanager/*
 /usr/lib/deepin-daemon/deepin-diskmanager-service
 /lib/udev/rules.d/99-diskmanager.rules
-%{_libexecdir}/deepin-diskmanager/USBadd.sh
-%{_libexecdir}/deepin-diskmanager/USBremove.sh
+%{_libexecdir}/lingmo-diskmanager/USBadd.sh
+%{_libexecdir}/lingmo-diskmanager/USBremove.sh
 %{_datadir}/dbus-1/system-services/com.deepin.diskmanager.service
 %{_datadir}/dbus-1/system.d/com.deepin.diskmanager.conf
 %{_datadir}/polkit-1/actions/com.deepin.diskmanager.policy

@@ -69,7 +69,7 @@ DMDbusHandler::DMDbusHandler(QObject *parent)
     qDBusRegisterMetaType<WipeAction>();
     qDebug() << "Registered LUKS related DBus meta types.";
 
-    m_dbus = new DMDBusInterface("com.deepin.diskmanager", "/com/deepin/diskmanager",
+    m_dbus = new DMDBusInterface("com.lingmo.diskmanager", "/com/lingmo/diskmanager",
                                  QDBusConnection::systemBus(), this);
     //Note: when dealing with remote objects, it is not always possible to determine if it exists when creating a QDBusInterface.
     if (!m_dbus->isValid() && !m_dbus->lastError().message().isEmpty()) {

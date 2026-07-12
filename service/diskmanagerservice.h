@@ -23,7 +23,7 @@ class DiskManagerService : public QObject
     , protected QDBusContext
 {
     Q_OBJECT
-    Q_CLASSINFO("D-Bus Interface", "com.deepin.diskmanager")
+    Q_CLASSINFO("D-Bus Interface", "com.lingmo.diskmanager")
 public:
     explicit DiskManagerService(const QString &frontEndDBusName, QObject *parent = nullptr);
 

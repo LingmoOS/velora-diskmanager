@@ -23,7 +23,7 @@
  */
 
 /*
- * Proxy class for interface com.deepin.diskmanager
+ * Proxy class for interface com.lingmo.diskmanager
  */
 class DMDBusInterface : public QDBusAbstractInterface
 {
@@ -35,7 +35,7 @@ public:
      */
     static inline const char *staticInterfaceName()
     {
-        return "com.deepin.diskmanager";
+        return "com.lingmo.diskmanager";
     }
 
 public:
@@ -492,7 +492,7 @@ Q_SIGNALS: // SIGNALS
 };
 
 namespace com {
-namespace deepin {
+namespace lingmo {
 typedef ::DMDBusInterface diskmanager;
 }
 } // namespace com

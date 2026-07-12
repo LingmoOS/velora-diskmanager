@@ -4,7 +4,7 @@ After=local-fs.target udisks2.service
 
 [Service]
 Type=dbus
-BusName=com.deepin.diskmanager
+BusName=com.lingmo.diskmanager
 ExecStart=/usr/lib/deepin-daemon/deepin-diskmanager-service
 User=root
 StandardOutput=journal

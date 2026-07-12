@@ -10,7 +10,7 @@ set(CMAKE_AUTORCC ON)
 
 
 set(APP_RES_DIR "assets")
-set(APP_SERVICE "${APP_RES_DIR}/data/com.deepin.diskmanager.service")
+set(APP_SERVICE "${APP_RES_DIR}/data/com.lingmo.diskmanager.service")
 set(SYSTEMD_SERVICE "${APP_RES_DIR}/data/diskmanager-daemon.service")
 set(APP_CONFIG "${APP_RES_DIR}/data/com.deepin.diskmanager.conf")
 set(APP_EDEV_DIR "udev")

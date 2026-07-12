@@ -11,7 +11,7 @@
 #include <QDBusError>
 #include <QThread>
 
-const QString DiskManagerServiceName = "com.deepin.diskmanager";
+const QString DiskManagerServiceName = "com.lingmo.diskmanager";
 const QString DiskManagerPath = "/com/deepin/diskmanager";
 
 void checkFrontEndQuit(uint frontEndPid)
